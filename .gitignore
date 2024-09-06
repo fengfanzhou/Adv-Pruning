@@ -1,0 +1,14 @@
+*
+!*/
+!*.py
+!*.md
+!*.yml
+!*.yaml
+!*.sh
+!.gitignore
+!*.ipynb
+!Dockerfile
+.ipynb_checkpoints
+.idea
+.vscode
+runs
