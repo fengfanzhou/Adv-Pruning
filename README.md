@@ -25,12 +25,12 @@ This project is tested under the following environment settings:
 Below, we outline the steps to obtain the checkpoints of the pre-trained models.
 For the FR model, we can download the checkpoints from [the official AMT-GAN GitHub page](https://github.com/CGCL-codes/AMT-GAN).
 
-The other custom models, we can integrate them conveniently by changing the `get_fr_model` in `utils/fr_model/fr_interface.py` for loading the models.
+For the other custom models, we can integrate them conveniently by changing the `get_fr_model` in `utils/fr_model/fr_interface.py` for loading the models.
 
 ## Craft the Adversarial Examples
 After the models are prepared, we can craft the adversarial examples using the following command:
 ```shell
-CUDA_VISIBLE_DEVICES=3 python main.py --fr_model_ckpt_path=[the path of the FR checkpoint] --attacker_img_path=[the path of the attacker image] --victim_img_path=[the path of the victim image] --adv_img_path=[the path of the adversarial example to be saved]
+CUDA_VISIBLE_DEVICES=[gpu id] python main.py --fr_model_ckpt_path=[the path of the FR checkpoint] --attacker_img_path=[the path of the attacker image] --victim_img_path=[the path of the victim image] --adv_img_path=[the path of the adversarial example to be saved]
 ```
 
 # Citing Adv-Pruning
